@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Sirawich</title>
+
+<style>
+:root {
+    --purple-main: #a88bd8;
+    --purple-soft: #e9e3f7;
+    --purple-dark: #5c3b8a;
+    --white: #ffffff;
+    --shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #f6f3fb, #ffffff);
+    color: #333;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    background: linear-gradient(135deg, #c9b7ec, #a88bd8);
+    color: white;
+    text-align: center;
+    padding: 60px 20px 50px;
+}
+
+header img {
+    width: 90px;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.3rem;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.05rem;
+    opacity: 0.95;
+}
+
+/* ---------- NAV ---------- */
+nav {
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 12px;
+    margin: 0;
+}
+
+nav li {
+    margin: 6px 14px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--purple-dark);
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: var(--purple-main);
+}
+
+/* ---------- SECTION ---------- */
+section {
+    max-width: 1050px;
+    margin: 35px auto;
+    padding: 45px 30px;
+    background: var(--white);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+}
+
+section h2 {
+    color: var(--purple-dark);
+    margin-bottom: 25px;
+    border-left: 6px solid var(--purple-main);
+    padding-left: 14px;
+}
+
+/* ---------- TABLE ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th, table td {
+    padding: 14px;
+    border: 1px solid #e6ddf5;
+    text-align: center;
+}
+
+table th {
+    background: linear-gradient(135deg, #bca7e8, #a88bd8);
+    color: white;
+}
+
+/* ---------- CARD ---------- */
+.card {
+    background: linear-gradient(180deg, #faf8ff, #f3eefb);
+    padding: 25px;
+    border-radius: 16px;
+    border-left: 6px solid var(--purple-main);
+    margin-top: 18px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background: linear-gradient(135deg, #a88bd8, #8f72c4);
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 40px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    section {
+        padding: 30px 20px;
+        margin: 20px 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="https://buildings.oop.cmu.ac.th/bookingarea/img/cmu_logo.png" alt="CMU Logo">
+    <h1>นายสิรวิชญ์ พุทธวงค์</h1>
+    <p>Portfolio มหาวิทยาลัยเชียงใหม่ | สายเทคโนโลยีสารสนเทศ</p>
+</header>
+
+<nav>
+<ul>
+    <li><a href="#profile">ประวัติ</a></li>
+    <li><a href="#skills">ทักษะ</a></li>
+    <li><a href="#projects">โครงงาน</a></li>
+    <li><a href="#training">การฝึกอบรม</a></li>
+    <li><a href="#inspiration">แรงบันดาลใจ</a></li>
+</ul>
+</nav>
+
+<section id="profile">
+<h2>ประวัติส่วนตัวและการศึกษา</h2>
+<p><strong>ชื่อ:</strong> นายสิรวิชญ์ พุทธวงค์</p>
+<p><strong>โรงเรียน:</strong> บุญวาทย์วิทยาลัย</p>
+<p><strong>แผนการเรียน:</strong> วิทยาศาสตร์ – คณิตศาสตร์ – คอมพิวเตอร์</p>
+<p><strong>ผลงาน:</strong> การแข่งขันศิลปหัตถกรรม ระดับเหรียญเงิน</p>
+</section>
+
+<section id="skills">
+<h2>ทักษะและการเขียนโปรแกรม</h2>
+<table>
+<tr>
+    <th>Programming</th>
+    <th>Tools</th>
+    <th>Technology Knowledge</th>
+</tr>
+<tr>
+    <td>Python (พื้นฐาน)</td>
+    <td>Visual Studio Code</td>
+    <td>โครงสร้างคอมพิวเตอร์</td>
+</tr>
+<tr>
+    <td>HTML / CSS</td>
+    <td>Git / GitHub</td>
+    <td>ระบบปฏิบัติการ</td>
+</tr>
+<tr>
+    <td>C / C++ (พื้นฐาน)</td>
+    <td>Microsoft Office</td>
+    <td>เครือข่ายคอมพิวเตอร์</td>
+</tr>
+<tr>
+    <td>JavaScript (พื้นฐาน)</td>
+    <td>Canva / Figma</td>
+    <td>Cyber Security เบื้องต้น</td>
+</tr>
+</table>
+</section>
+
+<section id="projects">
+<h2>โครงงานด้านไอที</h2>
+<div class="card">
+    <p><strong>โครงงาน:</strong> เว็บไซต์ Portfolio ส่วนบุคคล</p>
+    <p><strong>แนวคิด:</strong> นำเสนอข้อมูลเพื่อสมัครเข้าศึกษาต่อ</p>
+    <p><strong>เทคโนโลยี:</strong> HTML, CSS, JavaScript</p>
+    <p><strong>สิ่งที่ได้เรียนรู้:</strong> การออกแบบ UX/UI และการแก้ปัญหาอย่างเป็นระบบ</p>
+</div>
+</section>
+
+<section id="training">
+<h2>ประสบการณ์การฝึกอบรม</h2>
+<ul>
+    <li>เข้าร่วมค่ายและกิจกรรมด้านเทคโนโลยีสารสนเทศ</li>
+    <li>เรียนรู้การเขียนโปรแกรมด้วยตนเอง</li>
+    <li>ฝึกการทำงานเป็นทีมและความรับผิดชอบ</li>
+</ul>
+</section>
+
+<section id="inspiration">
+<h2>แรงบันดาลใจในการศึกษาและทำงานด้านไอที</h2>
+<p>
+ผมมีเป้าหมายที่จะศึกษาต่อในสาขาเทคโนโลยีสารสนเทศ
+เพื่อพัฒนาความรู้ทั้งเชิงทฤษฎีและปฏิบัติ
+ผมเชื่อว่าไอทีสามารถสร้างประโยชน์ให้กับสังคม
+และผมต้องการเป็นส่วนหนึ่งของการพัฒนาเทคโนโลยีเพื่ออนาคต
+</p>
+</section>
+
+<footer>
+<p>© Portfolio นักเรียนมัธยมศึกษาตอนปลาย | Chiang Mai University</p>
+</footer>
+
+</body>
+</html>
